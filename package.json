@@ -6,5 +6,21 @@
   "repository": "https://github.com/PC-RobinHood/reactjs.git",
   "author": "Justin Graham <support@pcrobinhood.com>",
   "license": "Apache 2.0",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@material-ui/core": "4.3.2",
+    "@material-ui/icons": "4.2.1",
+    "classnames": "2.2.6",
+    "history": "4.9.0",
+    "moment": "2.24.0",
+    "node-sass": "4.12.0",
+    "nouislider": "14.0.2",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.1.0",
+    "react-slick": "0.25.0",
+    "react-swipeable-views": "0.13.3"
+  }
 }
