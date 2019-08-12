@@ -1,0 +1,10 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "ReactJS template",
+  "main": "index.js",
+  "repository": "https://github.com/PC-RobinHood/reactjs.git",
+  "author": "Justin Graham <support@pcrobinhood.com>",
+  "license": "Apache 2.0",
+  "private": false
+}
