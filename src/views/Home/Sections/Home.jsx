@@ -1,16 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import withStyles from "@material-ui/core/styles/withStyles";
-import ArrowUpwardRound from "@material-ui/icons/ArrowUpwardRounded";
-import {Element, Events, scroller, scroll} from "react-scroll";
+import { Element, animateScroll as scroll } from "react-scroll";
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import Grid from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Parallex from "components/Parallex/Parallex.jsx"
+import Parallax from "components/Parallax/Parallax.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import componentStyle from "assets/jss/webpage/views/components/jsx";
+import componentsStyle from "assets/jss/webapp/views/components.jsx";
 
 class Components extends React.Components {
     constructor(props) {
@@ -18,6 +15,64 @@ class Components extends React.Components {
         this.scrollToTop = this.scrollToTop.bind(this);
     }
 
+    scrollToTop() {
+        scroll.scrollToTop();
+    }
 
-    
+    render() {
+        const { classes, ...rest } = this.props;
+        return (
+            <div>
+                <Header
+                    brand=""
+                    rightLinks={<HeaderLinks />}
+                    fixed
+                    color="transparent"
+                    changeColorOnScroll={{
+                        height: 400,
+                        color: "white"
+                    }}
+                    {...rest}
+                />
+                <Parallax image={require("assets/img/atom.jpg")}>
+                    <div className={classes.container}>
+                        <GridContainer>
+                            <GridItem>
+                                <div className={classes.brand}><Link to="/"></Link>
+                                    <h1 className={classes.title}></h1>
+                                    <h3 className={classes.subtitle}>
+                                    </h3>
+                                </div>
+                            </GridItem>
+                        </GridContainer>
+                    </div>
+                </Parallax>
+                <div className={classes.section}>
+                    <div className={classes.container}>
+                        <GridContainer justify="center">
+                            <GridItem xs={12} sm={12} md={8}>
+                                <Element name="scroll1" className={classes.element}>
+                                    <h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </h4>
+                                </Element>
+                            </GridItem>
+                        </GridContainer>
+                        <GridContainer justify="center">
+                            <GridItem xs={12} sm={12} md={8}>
+                                <Element name="scroll2">
+                                    <h4>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </h4>
+                                </Element>
+                            </GridItem>
+                        </GridContainer>
+                    </div>
+                </div>
+                <Footer />
+            </div>
+        )
+    }
 }
+
+export default withStyles(componentsStyle)(Components);
