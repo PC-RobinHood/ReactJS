@@ -8,6 +8,7 @@ import "assets/scss/style.scss"
 import Home from "views/Home/Home.jsx"
 import Who from "views/Who/Who.jsx"
 import What from "views/What/What.jsx"
+import Get from "views/Get/Get.jsx"
 import Events from "views/Events/Events.jsx"
 import Donate from "views/Donate/Donate.jsx"
 import Contact from "views/Contact/Contact.jsx"
@@ -20,6 +21,7 @@ ReactDOM.render(
             <Route path="/" component={Home} />
             <Route path="/WhoWeAre" component={Who} />
             <Route path="/WhatWeDo" component={What} />
+            <Route path="/GetInvolved" component={Get} />
             <Route path="/Events" component={Events} />
             <Route path="/Donate" component={Donate} />
             <Route path="/Contact" component={Contact} />
