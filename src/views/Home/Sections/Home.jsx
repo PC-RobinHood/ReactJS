@@ -5,12 +5,11 @@ import { Element, animateScroll as scroll } from "react-scroll";
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Parallax from "components/Parallax/Parallax.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import componentsStyle from "assets/jss/webapp/views/components.jsx";
+import homeStyle from "assets/jss/app/views/homeStyle.jsx";
 
-class Components extends React.Components {
-    constructor(props) {
+class Home extends React.Components {
+    constructor() {
         super(prop);
         this.scrollToTop = this.scrollToTop.bind(this);
     }
@@ -29,24 +28,18 @@ class Components extends React.Components {
                     fixed
                     color="transparent"
                     changeColorOnScroll={{
-                        height: 400,
+                        height: 100,
                         color: "white"
                     }}
                     {...rest}
                 />
-                <Parallax image={require("assets/img/atom.jpg")}>
-                    <div className={classes.container}>
-                        <GridContainer>
-                            <GridItem>
-                                <div className={classes.brand}><Link to="/"></Link>
-                                    <h1 className={classes.title}></h1>
-                                    <h3 className={classes.subtitle}>
-                                    </h3>
-                                </div>
-                            </GridItem>
-                        </GridContainer>
-                    </div>
-                </Parallax>
+                <GridContainer className={classes.logo} >
+                    <GridItem className={classes.logo} >
+                        <Link to="/">
+                            <img src={logo} className={classes.logo} ></img>
+                        </Link>
+                    </GridItem>
+                </GridContainer>
                 <div className={classes.section}>
                     <div className={classes.container}>
                         <GridContainer justify="center">
@@ -75,4 +68,4 @@ class Components extends React.Components {
     }
 }
 
-export default withStyles(componentsStyle)(Components);
+export default withStyles(homeStyle)(Home);

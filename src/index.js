@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import { createBrowserHistory } from "history"
 import { Router, Route, Switch } from "react-router-dom"
 
-import "assets/scss/style.scss"
+import "assets/scss/style.scss";
 
 import Home from "views/Home/Home.jsx"
 import Who from "views/Who/Who.jsx"

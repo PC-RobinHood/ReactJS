@@ -5,7 +5,7 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import componentsStyle from "assets/jss/webapp/views/components.jsx";
+import componentsStyle from "assets/jss/app/views/components.jsx";
 
 class Contact extends React.Components {
     constructor(props) {
@@ -27,7 +27,7 @@ class Contact extends React.Components {
                 fixed
                 color="transparent"
                 changeColorOnScroll={{
-                    height: 400,
+                    height: 100,
                     color: "white"
                 }}
                 {...rest}

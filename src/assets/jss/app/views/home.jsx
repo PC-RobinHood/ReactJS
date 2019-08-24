@@ -45,4 +45,4 @@ const componentsStyle = {
   }
 };
 
-export default componentsStyle;
+export default homeStyle;
