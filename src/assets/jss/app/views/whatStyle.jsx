@@ -1,13 +1,10 @@
 import { container } from "assets/jss/mainStyles.jsx";
 
-const componentsStyle = {
+const whatStyle = {
   container,
   brand: {
-    color: "#000000",
+    color: "#FFFFFF",
     textAlign: "left"
-  },
-  element: {
-    marginTop: "0px"
   },
   title: {
     fontSize: "4.2rem",
@@ -21,7 +18,7 @@ const componentsStyle = {
     margin: "10px 0 0"
   },
   main: {
-    background: "#000000",
+    background: "#FFFFFF",
     position: "relative",
     zIndex: "3"
   },
@@ -36,13 +33,7 @@ const componentsStyle = {
   },
   textCenter: {
     textAlign: "center"
-  },
-  iconUp: {
-    display: "none",
-    position: "fixed",
-    right: "0px",
-    bottom: "0px"
   }
 };
 
-export default homeStyle;
+export default whatStyle;

@@ -1,6 +1,6 @@
 import { container } from "assets/jss/mainStyles.jsx";
 
-const homeStyle = {
+const eventsStyle = {
   container,
   brand: {
     color: "#FFFFFF",
@@ -36,4 +36,4 @@ const homeStyle = {
   }
 };
 
-export default homeStyle;
+export default eventsStyle;
