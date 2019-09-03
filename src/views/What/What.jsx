@@ -7,6 +7,7 @@ import Footer from "components/Footer/Footer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import whatStyle from "assets/jss/app/views/whatStyle.jsx";
+import logo from "../../../assets/img/atom.jpg";
 
 class What extends React.Components {
     constructor() {
