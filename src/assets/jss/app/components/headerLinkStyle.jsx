@@ -1,4 +1,3 @@
-
 import { defaultFont } from "assets/jss/mainStyles.jsx";
 import tooltip from "assets/jss/app/tooltipsStyle.jsx";
 

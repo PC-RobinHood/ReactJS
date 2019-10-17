@@ -7,6 +7,7 @@ import Footer from "components/Footer/Footer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import eventsStyle from "assets/jss/app/views/eventStyle.jsx";
+import logo from "../../../assets/img/atom.jpg";
 
 class Events extends React.Components {
     constructor() {

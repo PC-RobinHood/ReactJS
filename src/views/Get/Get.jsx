@@ -7,6 +7,8 @@ import Footer from "components/Footer/Footer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import getStyle from "assets/jss/app/views/getStyle.jsx";
+import logo from "../../../assets/img/atom.jpg";
+
 
 class Get extends React.Components {
     constructor() {

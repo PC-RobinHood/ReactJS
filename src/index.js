@@ -3,15 +3,15 @@ import ReactDOM from "react-dom"
 import { createBrowserHistory } from "history"
 import { Router, Route, Switch } from "react-router-dom"
 
-import "assets/scss/style.scss";
+import "../src/assets/scss/style.scss"
 
-import Home from "views/Home/Home.jsx"
-import Who from "views/Who/Who.jsx"
-import What from "views/What/What.jsx"
-import Get from "views/Get/Get.jsx"
-import Events from "views/Events/Events.jsx"
-import Donate from "views/Donate/Donate.jsx"
-import Contact from "views/Contact/Contact.jsx"
+import Home from "./views/Home/Home"
+import Who from "./views/Who/Who"
+import What from "./views/What/What"
+import Get from "./views/Get/Get"
+import Events from "./views/Events/Events"
+import Donate from "./views/Donate/Donate"
+import Contact from "./views/Contact/Contact"
 
 var hist = createBrowserHistory()
 
